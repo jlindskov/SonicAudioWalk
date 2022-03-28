@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <WwiseProjectPath>../ThreeD-SoundSandbox copy_WwiseProject/ThreeD-SoundSandbox copy_WwiseProject.wproj</WwiseProjectPath>
+    <WwiseInstallationPathWindows>S:\Wwise Unity Integrations\2021</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+</WwiseSettings>
