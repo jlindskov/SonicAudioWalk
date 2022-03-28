@@ -44,7 +44,7 @@ public class Bird : MonoBehaviour
      private Rigidbody _rigidbody;
     private void Start()
     {
-        // TryGetComponent(out _rigidbody);
+        TryGetComponent(out _rigidbody);
         // _flyLoopInstance = RuntimeManager.CreateInstance(flyLoop);
         // _flyLoopInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
         // _takeOffInstance = RuntimeManager.CreateInstance(takeOff);
