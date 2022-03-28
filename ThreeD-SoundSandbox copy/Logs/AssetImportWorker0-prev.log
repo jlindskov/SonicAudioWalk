@@ -195,3 +195,49 @@ System memory in use after: 141.1 MB.
 Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 1799.
 Total: 2.501000 ms (FindLiveObjects: 0.179600 ms CreateObjectMapping: 0.051900 ms MarkObjects: 1.740600 ms  DeleteObjects: 0.527800 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000609 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1364 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.0 MB.
+System memory in use after: 140.5 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 1801.
+Total: 1.763900 ms (FindLiveObjects: 0.127400 ms CreateObjectMapping: 0.041400 ms MarkObjects: 1.071000 ms  DeleteObjects: 0.523200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1364 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.4 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 1803.
+Total: 2.086000 ms (FindLiveObjects: 0.194200 ms CreateObjectMapping: 0.076700 ms MarkObjects: 1.035800 ms  DeleteObjects: 0.778300 ms)
+
