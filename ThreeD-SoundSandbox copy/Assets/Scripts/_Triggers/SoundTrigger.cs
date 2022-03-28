@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FMODUnity;
+// using FMODUnity;
 
 public class SoundTrigger : MonoBehaviour 
 {
-    [EventRef]
-    public string eventName;
+    // [EventRef]
+    // public string eventName;
     public Transform target;
     public Collider probe;
 
@@ -28,7 +28,7 @@ public class SoundTrigger : MonoBehaviour
 
             }
 
-            Utils.PlayAudioEvent(eventName, position);            
+            // Utils.PlayAudioEvent(eventName, position);            
         }
 	}
 }

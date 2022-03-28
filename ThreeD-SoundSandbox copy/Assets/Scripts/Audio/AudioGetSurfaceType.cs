@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using FMODUnity;
+
 using UnityEngine;
 
 public class AudioGetSurfaceType : MonoBehaviour
@@ -10,6 +10,8 @@ public class AudioGetSurfaceType : MonoBehaviour
     private AudioSurfaceType _currentAudioSurfaceType;
 
 
+    //TODO: Fix this to work with wwise. 
+    
     void FixedUpdate()
     {
         Physics.Raycast(transform.position+Vector3.up, Vector3.down, out var hit, groundLayer);
@@ -44,12 +46,12 @@ public class AudioGetSurfaceType : MonoBehaviour
 
     void TriggerFMODParameter(AudioSurfaceType newSurfaceType, float value)
     {
-        FMOD.RESULT result = RuntimeManager.StudioSystem.setParameterByID(newSurfaceType.ParameterDesctription.id, value);
-        if (result != FMOD.RESULT.OK)
-        {
-            Debug.LogError(string.Format(
-                ("[FMOD] StudioGlobalParameterTrigger failed to set parameter {0} : result = {1}"),
-                newSurfaceType.parameter, result));
-        }
+        // FMOD.RESULT result = RuntimeManager.StudioSystem.setParameterByID(newSurfaceType.ParameterDesctription.id, value);
+        // if (result != FMOD.RESULT.OK)
+        // {
+        //     Debug.LogError(string.Format(
+        //         ("[FMOD] StudioGlobalParameterTrigger failed to set parameter {0} : result = {1}"),
+        //         newSurfaceType.parameter, result));
+        // }
     }
 }

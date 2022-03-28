@@ -1,11 +1,12 @@
 ﻿using System;
-using FMODUnity;
 using UnityEngine;
 
 
 public class AudioParameterFader : MonoBehaviour
 {
-    public StudioEventEmitter eventEmitter;
+    
+    //TODO: Might be worth doing for wwise
+    
     [Serializable]
     public class FaderSettings
     {
@@ -48,7 +49,7 @@ public class AudioParameterFader : MonoBehaviour
         {
             float t = transform.InverseTransformPoint(_trackTransform.position).x + 0.5f;
             fade.currentValue = Mathf.Lerp(fade.fadeFrom, fade.fadeTo, t);
-            eventEmitter.EventInstance.setParameterByName(fade.parameterName, fade.currentValue);
+            // eventEmitter.EventInstance.setParameterByName(fade.parameterName, fade.currentValue);
         }
     }
 

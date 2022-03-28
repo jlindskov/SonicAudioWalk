@@ -1,20 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FMODUnity;
+
 
 public class PlayerMovement : MonoBehaviour 
 {
     [Header("---- Audio ----")]
 
-    [EventRef]
-    public string landEvent;
-
-    [EventRef]
-    public string jumpEvent;
-
-    [EventRef]
-    public string footstepEvent;
+    // [EventRef]
+    // public string landEvent;
+    //
+    // [EventRef]
+    // public string jumpEvent;
+    //
+    // [EventRef]
+    // public string footstepEvent;
 
     [Header("---- Headbob ----")]
     public Headbob headbob;
@@ -187,7 +187,7 @@ public class PlayerMovement : MonoBehaviour
         
             if (distanceToNextStep <= 0)
             {
-                Utils.PlayAudioEvent(footstepEvent, transform.position+Vector3.down);
+                //TODO: FS sound 
 
                 if (headbob)
                 {
@@ -209,7 +209,7 @@ public class PlayerMovement : MonoBehaviour
 
         characterRigidbody.AddForce(jumpImpulse * -Mathf.Sign(gravity.y), ForceMode.Impulse);     
 
-        Utils.PlayAudioEvent(jumpEvent, transform.position+Vector3.down);
+        //TODO: Jump
     }
 
     void GroundCheck()
@@ -243,7 +243,8 @@ public class PlayerMovement : MonoBehaviour
                 headbob.AddForce(characterRigidbody.velocity.y * headbobLandForce * 0.01f);
             }
 
-            Utils.PlayAudioEvent(landEvent, transform.position+Vector3.down);
+            //TODO: LAND
+           
         }
 
         previouslyGrounded = currentlyGrounded;

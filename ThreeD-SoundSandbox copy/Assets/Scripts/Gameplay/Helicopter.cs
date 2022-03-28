@@ -1,5 +1,4 @@
 ﻿using System;
-using FMODUnity;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -52,15 +51,15 @@ public class Helicopter : MonoBehaviour
     private bool _currentActiveState = false;
     private float _playerInSightValue;
 
-    [ParamRef] public string parameter;
-    private FMOD.Studio.PARAMETER_DESCRIPTION _parameterDescription;
+    // [ParamRef] public string parameter;
+    // private FMOD.Studio.PARAMETER_DESCRIPTION _parameterDescription;
 
     private void Awake()
     {
-        if (string.IsNullOrEmpty(_parameterDescription.name))
-        {
-            RuntimeManager.StudioSystem.getParameterDescriptionByName(parameter, out _parameterDescription);
-        }
+        // if (string.IsNullOrEmpty(_parameterDescription.name))
+        // {
+        //     RuntimeManager.StudioSystem.getParameterDescriptionByName(parameter, out _parameterDescription);
+        // }
 
         gameObject.SetActive(_currentActiveState);
     }
@@ -180,30 +179,30 @@ public class Helicopter : MonoBehaviour
         switch (newState)
         {
             case HelicopterStates.Idle:
-                TriggerFMODParameter(0);
+                SetWwiseSwitch(0);
                 gameObject.SetActive(false);
                 _currentActiveState = false;
                 break;
             case HelicopterStates.GotoPatrolPosition:
                 _returnDuration = Vector3.Distance(transform.position, patrolStartTarget.position) / 10;
-                TriggerFMODParameter(1);
+                SetWwiseSwitch(1);
                 break;
             case HelicopterStates.Searching:
                 searchLight.color = Color.white;
                 _searchTime = 0;
-                TriggerFMODParameter(1);
+                SetWwiseSwitch(1);
                 break;
             case HelicopterStates.Chasing:
                 searchLight.color = Color.red;
-                TriggerFMODParameter(2);
+                SetWwiseSwitch(2);
                 break;
             case HelicopterStates.Patrolling:
                 _currentWayPoint = GetClosestsWaypointIndex();
-                TriggerFMODParameter(1);
+                SetWwiseSwitch(1);
                 break;
             case HelicopterStates.GotoHomePosition:
                 _returnHomeDuration = Vector3.Distance(transform.position, homeTarget.position) / 6;
-                TriggerFMODParameter(0);
+                SetWwiseSwitch(0);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
@@ -230,16 +229,16 @@ public class Helicopter : MonoBehaviour
         return returnIndex;
     }
 
-    void TriggerFMODParameter(int value)
+    void SetWwiseSwitch(int value)
     {
-        print("set "+ _parameterDescription.name +" parameter to " + value);
-        FMOD.RESULT result = RuntimeManager.StudioSystem.setParameterByID(_parameterDescription.id, value);
-        if (result != FMOD.RESULT.OK)
-        {
-            Debug.LogError(string.Format(
-                ("[FMOD] StudioGlobalParameterTrigger failed to set parameter {0} : result = {1}"),
-                parameter, result));
-        }
+        // print("set "+ _parameterDescription.name +" parameter to " + value);
+        // FMOD.RESULT result = RuntimeManager.StudioSystem.setParameterByID(_parameterDescription.id, value);
+        // if (result != FMOD.RESULT.OK)
+        // {
+        //     Debug.LogError(string.Format(
+        //         ("[FMOD] StudioGlobalParameterTrigger failed to set parameter {0} : result = {1}"),
+        //         parameter, result));
+        // }
     }
 
     public void SetHelicopterActive(bool state)

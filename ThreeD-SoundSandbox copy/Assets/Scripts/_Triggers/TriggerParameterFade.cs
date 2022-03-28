@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FMODUnity;
-using FMOD.Studio;
+// using FMODUnity;
+// using FMOD.Studio;
 
 public class TriggerParameterFade : MonoBehaviour 
 {
-    public StudioEventEmitter eventEmitter;
+    // public StudioEventEmitter eventEmitter;
     public string parameterName;
 
     public float targetValue = 0f;
@@ -20,7 +20,7 @@ public class TriggerParameterFade : MonoBehaviour
     {
         if (probe == null || collider == probe)
         {
-            EventInstance instance = eventEmitter.EventInstance;
+            // EventInstance instance = eventEmitter.EventInstance;
             
             currentlyFading = true;
         }
@@ -30,11 +30,11 @@ public class TriggerParameterFade : MonoBehaviour
     {
         if (currentlyFading)
         {
-            float currentValue;
-            eventEmitter.EventInstance.getParameterByName(parameterName, out currentValue);
+            float currentValue = 0;
+            // eventEmitter.EventInstance.getParameterByName(parameterName, out currentValue);
 
             float nextValue = Mathf.MoveTowards(currentValue, targetValue, speed * Time.deltaTime);
-            eventEmitter.EventInstance.setParameterByName(parameterName, nextValue);
+            // eventEmitter.EventInstance.setParameterByName(parameterName, nextValue);
 
             if (nextValue == currentValue)
                 currentlyFading = false;

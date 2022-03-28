@@ -1,5 +1,4 @@
 ﻿using System;
-using FMODUnity;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -29,33 +28,35 @@ public class Bird : MonoBehaviour
 
     private BirdTrigger _currentBirdTrigger;
 
-    [EventRef]
-    public string flyLoop = "";
-    private FMOD.Studio.EventInstance _flyLoopInstance;
-
-    [EventRef]
-    public string land = "";
-    private FMOD.Studio.EventInstance _landInstance;
-
-    [EventRef]
-    public string takeOff = "";
-    private FMOD.Studio.EventInstance _takeOffInstance;
-    private Rigidbody _rigidbody;
+    
+    //TODO: Fly loop
+    // [EventRef]
+    // public string flyLoop = "";
+    // private FMOD.Studio.EventInstance _flyLoopInstance;
+    //
+    // [EventRef]
+    // public string land = "";
+    // private FMOD.Studio.EventInstance _landInstance;
+    //
+    // [EventRef]
+    // public string takeOff = "";
+    // private FMOD.Studio.EventInstance _takeOffInstance;
+     private Rigidbody _rigidbody;
     private void Start()
     {
-        TryGetComponent(out _rigidbody);
-        _flyLoopInstance = RuntimeManager.CreateInstance(flyLoop);
-        _flyLoopInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
-        _takeOffInstance = RuntimeManager.CreateInstance(takeOff);
-        _takeOffInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
-
-        _landInstance = RuntimeManager.CreateInstance(land);
-        _landInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
-
-
-        RuntimeManager.AttachInstanceToGameObject(_landInstance, transform, _rigidbody);
-        RuntimeManager.AttachInstanceToGameObject(_takeOffInstance, transform, _rigidbody);
-        RuntimeManager.AttachInstanceToGameObject(_flyLoopInstance, transform, _rigidbody);
+        // TryGetComponent(out _rigidbody);
+        // _flyLoopInstance = RuntimeManager.CreateInstance(flyLoop);
+        // _flyLoopInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+        // _takeOffInstance = RuntimeManager.CreateInstance(takeOff);
+        // _takeOffInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+        //
+        // _landInstance = RuntimeManager.CreateInstance(land);
+        // _landInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+        //
+        //
+        // RuntimeManager.AttachInstanceToGameObject(_landInstance, transform, _rigidbody);
+        // RuntimeManager.AttachInstanceToGameObject(_takeOffInstance, transform, _rigidbody);
+        // RuntimeManager.AttachInstanceToGameObject(_flyLoopInstance, transform, _rigidbody);
 
 
         _currentBirdTrigger = birdTriggers[0];
@@ -81,14 +82,14 @@ public class Bird : MonoBehaviour
         {
             case State.Idle:
                 _currentBirdTrigger.hasBird = true;
-                _landInstance.start();
-                _flyLoopInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                // _landInstance.start();
+                // _flyLoopInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 break;
             case State.Lift:
                 _gotoPosition = _startPosition + Vector3.up * liftHeight;
                 _currentBirdTrigger.hasBird = false;
-                _takeOffInstance.start();
-                _flyLoopInstance.start();
+                // _takeOffInstance.start();
+                // _flyLoopInstance.start();
                 break;
             case State.GotoPoint:
                 var newBirdTrigger = birdTriggers[Random.Range(0, birdTriggers.Length)];
@@ -131,9 +132,9 @@ public class Bird : MonoBehaviour
             case State.Lift:
                 transform.position = Vector3.LerpUnclamped(_startPosition, _gotoPosition, liftCurve.Evaluate(_stateTime / liftDuration));
                 _rigidbody.position = transform.position;
-                RuntimeManager.AttachInstanceToGameObject(_landInstance, transform, _rigidbody);
-                RuntimeManager.AttachInstanceToGameObject(_takeOffInstance, transform, _rigidbody);
-                RuntimeManager.AttachInstanceToGameObject(_flyLoopInstance, transform, _rigidbody);
+                // RuntimeManager.AttachInstanceToGameObject(_landInstance, transform, _rigidbody);
+                // RuntimeManager.AttachInstanceToGameObject(_takeOffInstance, transform, _rigidbody);
+                // RuntimeManager.AttachInstanceToGameObject(_flyLoopInstance, transform, _rigidbody);
 
                 if (_stateTime / liftDuration > 1)
                 {

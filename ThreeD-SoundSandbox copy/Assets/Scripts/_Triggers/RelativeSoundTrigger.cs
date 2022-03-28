@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FMODUnity;
+// using FMODUnity;
 
 public class RelativeSoundTrigger : MonoBehaviour 
 {
-    [EventRef]
-    public string eventName;
+    // [EventRef]
+    // public string eventName;
 
     public Transform target;
     public Vector3 relativeOffset;
@@ -24,6 +24,6 @@ public class RelativeSoundTrigger : MonoBehaviour
             position = transform.TransformPoint(relativeOffset);
         }
 
-        Utils.PlayAudioEvent(eventName, position);            
+        // Utils.PlayAudioEvent(eventName, position);            
 	}
 }

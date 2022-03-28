@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FMODUnity;
 
 public class CoinTrigger : MonoBehaviour 
 {
@@ -11,8 +10,8 @@ public class CoinTrigger : MonoBehaviour
     public float score = 10f;
     public GameObject deactivateTarget;
 
-    [EventRef]
-    public string eventName;
+    // [EventRef]
+    // public string eventName;
 
     void OnTriggerEnter(Collider collider)
     {
@@ -25,10 +24,10 @@ public class CoinTrigger : MonoBehaviour
                 deactivateTarget.SetActive(false);
             }
 
-            if (eventName != "")
-            {
-                Utils.PlayAudioEvent(eventName, transform.position);            
-            }
+            // if (eventName != "")
+            // {
+            //     Utils.PlayAudioEvent(eventName, transform.position);            
+            // }
         }
 	}
 }

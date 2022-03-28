@@ -1,20 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FMODUnity;
-using FMOD.Studio;
 
 [RequireComponent(typeof(Rigidbody))]
 public class AudioRigidbody : MonoBehaviour
 {
-    [EventRef]
-    public string impactEvent;
-
-    [EventRef]
-    public string moveEvent;
-
-    [EventRef]
-    public string moveStopEvent;
+    // [EventRef]
+    // public string impactEvent;
+    //
+    // [EventRef]
+    // public string moveEvent;
+    //
+    // [EventRef]
+    // public string moveStopEvent;
 
     [Space(10)]
     public string speedParameterName;
@@ -38,7 +36,7 @@ public class AudioRigidbody : MonoBehaviour
     private bool previouslyMoving;
 
     private Rigidbody objectRigidbody;
-    private EventInstance instance;
+    // private EventInstance instance;
 
     private float speedParameter;
 
@@ -46,15 +44,15 @@ public class AudioRigidbody : MonoBehaviour
     {
         objectRigidbody = GetComponent<Rigidbody>();
 
-        if (string.IsNullOrEmpty(moveEvent) == false)
-        {
-            instance = RuntimeManager.CreateInstance(moveEvent);
-
-            FMOD.ATTRIBUTES_3D positionAttribute = RuntimeUtils.To3DAttributes(transform, objectRigidbody);
-            instance.set3DAttributes(positionAttribute);
-
-            instance.getParameterByName(speedParameterName, out speedParameter);
-        }
+        // if (string.IsNullOrEmpty(moveEvent) == false)
+        // {
+        //     // instance = RuntimeManager.CreateInstance(moveEvent);
+        //     //
+        //     // FMOD.ATTRIBUTES_3D positionAttribute = RuntimeUtils.To3DAttributes(transform, objectRigidbody);
+        //     // instance.set3DAttributes(positionAttribute);
+        //     //
+        //     // instance.getParameterByName(speedParameterName, out speedParameter);
+        // }
     }
 
     void FixedUpdate()
@@ -69,11 +67,11 @@ public class AudioRigidbody : MonoBehaviour
             if(previouslyMoving == false)
             {
                 //Start moving    
-                instance.start();
+             //   instance.start();
             }
 
             currentSpeedFraction = Mathf.InverseLerp(minimumSpeed, maximumSpeed, currentSpeed);
-            instance.setParameterByName(speedParameterName, currentSpeedFraction);
+           // instance.setParameterByName(speedParameterName, currentSpeedFraction);
             //Debug.Log(speedParameter);
         }
         else
@@ -81,13 +79,13 @@ public class AudioRigidbody : MonoBehaviour
             if(previouslyMoving)
             {
                 //Stop moving
-                instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+              //  instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
                 //Stop event
-                if (currentlyGrounded)
-                {
-                    Utils.PlayAudioEvent(moveStopEvent, objectRigidbody.position);           
-                }
+                // if (currentlyGrounded)
+                // {
+                //     Utils.PlayAudioEvent(moveStopEvent, objectRigidbody.position);           
+                // }
             }
         }
             
@@ -101,7 +99,7 @@ public class AudioRigidbody : MonoBehaviour
         if (impactVelocity > minimumImpactVelocity)
         {
             Vector3 position = collision.contacts[0].point;
-            Utils.PlayAudioEvent(impactEvent, position);           
+           // Utils.PlayAudioEvent(impactEvent, position);           
         }
     }
 

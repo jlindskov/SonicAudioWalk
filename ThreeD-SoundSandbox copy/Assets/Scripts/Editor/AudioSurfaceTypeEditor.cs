@@ -1,5 +1,4 @@
 ﻿using System;
-using FMODUnity;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,7 +9,7 @@ public class AudioSurfaceTypeEditor : Editor
 
     SerializedProperty data1, data2;
 
-    [SerializeField] EditorParamRef editorParamRef;
+    //[SerializeField] EditorParamRef editorParamRef;
     
 
     void OnEnable()
@@ -27,10 +26,10 @@ EditorGUILayout.Space();
 
         if (!String.IsNullOrEmpty(param.stringValue))
         {
-            if (!editorParamRef || param.stringValue != oldParam)
-            {
-                editorParamRef = EventManager.ParamFromPath(param.stringValue);
-            }
+            // if (!editorParamRef || param.stringValue != oldParam)
+            // {
+            //    // editorParamRef = EventManager.ParamFromPath(param.stringValue);
+            // }
             
         }
 
