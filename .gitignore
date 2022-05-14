@@ -67,13 +67,10 @@ fmod_editor.log
 
 # project stuff
 ThreeD-SoundSandbox copy_WwiseProject/.cache
-ThreeD-SoundSandbox copy_WwiseProject/*.prof
-ThreeD-SoundSandbox copy_WwiseProject/*_WwiseProject.*.validationcache
-ThreeD-SoundSandbox copy_WwiseProject/*_WwiseProject.*.wsettings
-ThreeD-SoundSandbox copy_WwiseProject/**/*.akd
-
-# build stuff (unsure?)
-# Assets/Wwise/Deployment/Plugins/Windows/**/*.meta
+3DSoundSandbox/3DSoundSandbox WwiseProject/*.prof
+3DSoundSandbox/3DSoundSandbox WwiseProject/*_WwiseProject.*.validationcache
+3DSoundSandbox/3DSoundSandbox WwiseProject/*_WwiseProject.*.wsettings
+3DSoundSandbox/3DSoundSandbox WwiseProject/**/*.akd
 
 # WWise Picker (editor)
 # from https://www.audiokinetic.com/library/edge/?source=Unity&id=unity__troubleshooting.html
@@ -87,7 +84,6 @@ Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
 #    then don't ignore Assets/Wwise/Editor/ProjectData.meta. If AkWwiseProjectData.asset is the only item in there,
 #    then, it's OK to ignore this file.
 # 
-# Assets/Wwise/Editor/ProjectData.meta
 
 ## --------------- ##
 ## End WWise Stuff ##
@@ -131,3 +127,5 @@ Desktop.ini
 
 /FMOD_Project/ThreeD-SoundSandbox/.cache
 /FMOD_Project/ThreeD-SoundSandbox/.user
+
+3DSoundSandbox/.idea

@@ -11,7 +11,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>S:\Wwise Unity Integrations\2021</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../ThreeD-SoundSandbox copy_WwiseProject/ThreeD-SoundSandbox copy_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../3DSoundSandbox WwiseProject/3DSoundSandbox WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>S:\Dev\SonicAudioWalk\3DSoundSandbox\3DSoundSandbox WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>S:\Dev\SonicAudioWalk\3DSoundSandbox\3DSoundSandbox WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>S:\Dev\SonicAudioWalk\3DSoundSandbox\3DSoundSandbox WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>S:\Dev\SonicAudioWalk\3DSoundSandbox\3DSoundSandbox WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

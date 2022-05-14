@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="Project" SchemaVersion="103" WwiseVersion="v2021.1.7" WwiseBuild="7796">
 	<ProjectInfo>
-		<Project Name="ThreeD-SoundSandbox copy_WwiseProject" ID="{49464CB9-A6BC-4CDF-BB2D-B4BA78877221}">
+		<Project Name="3DSoundSandbox WwiseProject" ID="{49464CB9-A6BC-4CDF-BB2D-B4BA78877221}">
 			<Platforms>
 				<Platform Name="Mac" ReferencePlatform="Mac" ID="{4445279B-DCFC-496D-B130-7FF7E630276C}"/>
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{91D1BC77-23A5-4957-9F15-ED9E4F028B12}"/>
