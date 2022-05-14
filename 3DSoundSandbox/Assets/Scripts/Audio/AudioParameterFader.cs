@@ -1,4 +1,5 @@
 ﻿using System;
+using AK.Wwise;
 using UnityEngine;
 
 
@@ -10,7 +11,7 @@ public class AudioParameterFader : MonoBehaviour
     [Serializable]
     public class FaderSettings
     {
-        public string parameterName;
+        public RTPC rtpc;
         public float fadeFrom;
         public float fadeTo;
         [HideInInspector]
@@ -49,7 +50,7 @@ public class AudioParameterFader : MonoBehaviour
         {
             float t = transform.InverseTransformPoint(_trackTransform.position).x + 0.5f;
             fade.currentValue = Mathf.Lerp(fade.fadeFrom, fade.fadeTo, t);
-            // eventEmitter.EventInstance.setParameterByName(fade.parameterName, fade.currentValue);
+            fade.rtpc.SetGlobalValue(fade.currentValue);
         }
     }
 

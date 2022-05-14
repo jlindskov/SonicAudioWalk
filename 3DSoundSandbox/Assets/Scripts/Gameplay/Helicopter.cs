@@ -38,13 +38,11 @@ public class Helicopter : MonoBehaviour
     private int _currentWayPoint;
     private int _patrolDir = 1;
     public AnimationCurve patrolMovement;
-
-
+    
     private PlayerMovement _playerTarget;
     [FormerlySerializedAs("light")] public Light searchLight;
     public LayerMask lightConeRayLayer;
-
-
+    
     private Vector3 _stateStartPosition;
     private float _stateTime;
 

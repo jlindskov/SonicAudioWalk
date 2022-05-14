@@ -34,24 +34,12 @@ public class AudioGetSurfaceType : MonoBehaviour
 
     void SetSurfaceType(AudioSurfaceType newSurfaceType)
     {
-        if (_currentAudioSurfaceType != null)
-        {
-           TriggerFMODParameter(_currentAudioSurfaceType, 0);
-        }
-        
-        TriggerFMODParameter(newSurfaceType, 1);
-
+        SetWwiseSwitch(newSurfaceType);
         _currentAudioSurfaceType = newSurfaceType;
     }
 
-    void TriggerFMODParameter(AudioSurfaceType newSurfaceType, float value)
+    void SetWwiseSwitch(AudioSurfaceType newSurfaceType)
     {
-        // FMOD.RESULT result = RuntimeManager.StudioSystem.setParameterByID(newSurfaceType.ParameterDesctription.id, value);
-        // if (result != FMOD.RESULT.OK)
-        // {
-        //     Debug.LogError(string.Format(
-        //         ("[FMOD] StudioGlobalParameterTrigger failed to set parameter {0} : result = {1}"),
-        //         newSurfaceType.parameter, result));
-        // }
+        newSurfaceType.groundType.SetValue(this.gameObject);
     }
 }
