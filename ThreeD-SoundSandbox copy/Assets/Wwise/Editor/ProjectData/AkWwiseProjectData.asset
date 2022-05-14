@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3f29436203e22e4ea4865d7072911058
     GuidInternal: 
-    m_lastTime: -8585531099294441748
-    List: []
+    m_lastTime: -8585490750155077673
+    List:
+    - name: Soundbank
+      guid: fc493d8163a27143bf5efee449747ae4
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3f29436203e22e4ea4865d7072911058
+      - ElementName: Soundbank
+        ObjectType: 7
+        guid: fc493d8163a27143bf5efee449747ae4
+      Path: SoundBanks\Default Work Unit\Soundbank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 3ac12a9ab1d99b44ba077435ee8a358c
     GuidInternal: 
-    m_lastTime: -8585531099296655814
-    List: []
+    m_lastTime: -8585490750379156258
+    List:
+    - name: TestSine_Play
+      guid: 17a4f2a544855049ab6094b2ef57931e
+      id: 3923313419
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3ac12a9ab1d99b44ba077435ee8a358c
+      - ElementName: TestSine_Play
+        ObjectType: 3
+        guid: 17a4f2a544855049ab6094b2ef57931e
+      Path: Events\Default Work Unit\TestSine_Play
+      maxAttenuation: 0
+      maxDuration: 0.085958
+      minDuration: 0.085958
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -138,9 +169,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585531099294940413
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 03000000
+  ExpandedWaapiItemIds: 03000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

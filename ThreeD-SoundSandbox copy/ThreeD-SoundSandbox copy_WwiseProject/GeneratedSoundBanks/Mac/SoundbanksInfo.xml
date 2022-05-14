@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1661994096" Language="SFX" Hash="1452193368">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
+			<ShortName>Soundbank</ShortName>
+			<Path>Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3923313419" Name="TestSine_Play" ObjectPath="\Events\Default Work Unit\TestSine_Play" DurationType="OneShot" DurationMin="0.085958" DurationMax="0.085958">
+					<IncludedMemoryFiles>
+						<File Id="774378453" Language="SFX">
+							<ShortName>NoCatID_sine tone hz 6_Soundly_None.wav</ShortName>
+							<Path>SFX\NoCatID_sine tone hz 6_Soundly_None_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -66,11 +66,11 @@ fmod_editor.log
 ## ---------------- ##
 
 # project stuff
-WWiseProject/.cache/
-WWiseProject/*.prof
-WwiseProject/*_WwiseProject.*.validationcache
-WwiseProject/*_WwiseProject.*.wsettings
-WwiseProject/**/*.akd
+ThreeD-SoundSandbox copy_WwiseProject/.cache
+ThreeD-SoundSandbox copy_WwiseProject/*.prof
+ThreeD-SoundSandbox copy_WwiseProject/*_WwiseProject.*.validationcache
+ThreeD-SoundSandbox copy_WwiseProject/*_WwiseProject.*.wsettings
+ThreeD-SoundSandbox copy_WwiseProject/**/*.akd
 
 # build stuff (unsure?)
 # Assets/Wwise/Deployment/Plugins/Windows/**/*.meta

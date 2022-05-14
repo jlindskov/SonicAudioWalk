@@ -12607,6 +12607,11 @@ PrefabInstance:
       propertyPath: footstepEvent
       value: event:/Footsteps/footstep_mono_spatialised
       objectReference: {fileID: 0}
+    - target: {fileID: 114927293991677974, guid: ec023b15ae05a423685cd9017981f4ad,
+        type: 3}
+      propertyPath: bobSize
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 136495756058341456, guid: ec023b15ae05a423685cd9017981f4ad,
         type: 3}
       propertyPath: m_Material
@@ -12615,6 +12620,7 @@ PrefabInstance:
         type: 2}
     m_RemovedComponents:
     - {fileID: 114520709435390040, guid: ec023b15ae05a423685cd9017981f4ad, type: 3}
+    - {fileID: 81838895798273592, guid: ec023b15ae05a423685cd9017981f4ad, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec023b15ae05a423685cd9017981f4ad, type: 3}
 --- !u!1 &971542005
 GameObject:
@@ -16501,7 +16507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302883970}
   m_LocalRotation: {x: 0.0000000046842414, y: -0.560752, z: -0.000000014583515, w: -0.8279839}
-  m_LocalPosition: {x: 50.087, y: -0.4, z: 39.341}
+  m_LocalPosition: {x: 50.087, y: -0.86, z: 39.341}
   m_LocalScale: {x: 17.271357, y: 0.1, z: 5}
   m_Children: []
   m_Father: {fileID: 1074120850}
@@ -21872,6 +21878,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1717763204}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1664987556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1664987558}
+  - component: {fileID: 1664987557}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1664987557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664987556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38943cddc95d5b4db4c246675edb2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 32df72a05f2451045b4461af9718b188,
+    type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1664987558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664987556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1666717743
 GameObject:
   m_ObjectHideFlags: 0
@@ -24389,6 +24452,42 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!114 &1899269801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899269797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0278596c61c2e48b84fcdb44310fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!114 &1899269802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899269797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385baa0c348aa4f40acb4e4071861ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1900673851
 GameObject:
   m_ObjectHideFlags: 0

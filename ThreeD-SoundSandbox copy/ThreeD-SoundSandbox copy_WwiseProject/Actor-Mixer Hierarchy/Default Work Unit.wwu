@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{34E20B60-C387-4545-A469-066466B93165}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{34E20B60-C387-4545-A469-066466B93165}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{34E20B60-C387-4545-A469-066466B93165}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Test" ID="{FB3CABB5-01F9-40D5-B385-0CE270083DE4}" ShortID="520950064">
+					<ChildrenList>
+						<Sound Name="TestSine" ID="{38578B00-1A20-4F28-B803-56A463FC36F4}" ShortID="747575292">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7632058-66F7-410F-B76F-28F750380AF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{239081C3-FCEC-4667-8CF7-AE4F1B4A9A2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="NoCatID_sine tone hz 6_Soundly_None" ID="{DD83D716-E371-4790-8E4B-CDBE38843134}">
+									<Language>SFX</Language>
+									<AudioFile>NoCatID_sine tone hz 6_Soundly_None.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="774378453"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="NoCatID_sine tone hz 6_Soundly_None" ID="{DD83D716-E371-4790-8E4B-CDBE38843134}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
