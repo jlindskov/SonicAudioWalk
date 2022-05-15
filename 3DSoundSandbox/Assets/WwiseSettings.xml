@@ -9,7 +9,7 @@
   <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
-  <WwiseInstallationPathMac />
+  <WwiseInstallationPathMac>/Volumes/Mac HDD 1/Dev/Wwise/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows>S:\Wwise Unity Integrations\2021</WwiseInstallationPathWindows>
   <WwiseProjectPath>../3DSoundSandbox WwiseProject/3DSoundSandbox WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>

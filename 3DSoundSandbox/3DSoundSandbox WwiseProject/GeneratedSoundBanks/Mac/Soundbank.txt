@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
+	3807434623	TestSine_Play_01			\Default Work Unit\TestSine_Play_01	
 	3923313419	TestSine_Play			\Default Work Unit\TestSine_Play	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	774378453	TestSine	S:\Dev\SonicAudioWalk\ThreeD-SoundSandbox copy\ThreeD-SoundSandbox copy_WwiseProject\.cache\Mac\SFX\NoCatID_sine tone hz 6_Soundly_None_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\TestSine		8316
+	774378453	TestSine	Z:\Volumes\Mac HDD 1\Dev\Unity Projects\SonicAudioWalk\3DSoundSandbox\3DSoundSandbox WwiseProject\.cache\Mac\SFX\NoCatID_sine tone hz 6_Soundly_None_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\TestSine		8316
 

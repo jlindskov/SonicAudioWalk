@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Virtual Acoustics
       ObjectType: 5
@@ -21,13 +21,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 934f7ffb7af3504d957bf47d4be7f282
-    ParentPath: Virtual Acoustics\Default Work Unit
+    ParentPath: Virtual Acoustics/Default Work Unit
     guid: 934f7ffb7af3504d957bf47d4be7f282
     GuidInternal: 
-    m_lastTime: -8585531099294790789
+    m_lastTime: -8585489943944775808
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Master-Mixer Hierarchy
       ObjectType: 5
@@ -35,10 +35,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: c3819023ecfc67468cf7ae4f1b4a9a2a
-    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: c3819023ecfc67468cf7ae4f1b4a9a2a
     GuidInternal: 
-    m_lastTime: -8585531099296556089
+    m_lastTime: -8585489943944775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -53,9 +53,9 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
@@ -63,10 +63,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 3f29436203e22e4ea4865d7072911058
-    ParentPath: SoundBanks\Default Work Unit
+    ParentPath: SoundBanks/Default Work Unit
     guid: 3f29436203e22e4ea4865d7072911058
     GuidInternal: 
-    m_lastTime: -8585490750155077673
+    m_lastTime: -8585489943944775808
     List:
     - name: Soundbank
       guid: fc493d8163a27143bf5efee449747ae4
@@ -81,9 +81,9 @@ MonoBehaviour:
       - ElementName: Soundbank
         ObjectType: 7
         guid: fc493d8163a27143bf5efee449747ae4
-      Path: SoundBanks\Default Work Unit\Soundbank
+      Path: SoundBanks/Default Work Unit/Soundbank
   EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+  - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
@@ -91,10 +91,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 3ac12a9ab1d99b44ba077435ee8a358c
-    ParentPath: Events\Default Work Unit
+    ParentPath: Events/Default Work Unit
     guid: 3ac12a9ab1d99b44ba077435ee8a358c
     GuidInternal: 
-    m_lastTime: -8585490750379156258
+    m_lastTime: -8585489943944775808
     List:
     - name: TestSine_Play
       guid: 17a4f2a544855049ab6094b2ef57931e
@@ -109,12 +109,12 @@ MonoBehaviour:
       - ElementName: TestSine_Play
         ObjectType: 3
         guid: 17a4f2a544855049ab6094b2ef57931e
-      Path: Events\Default Work Unit\TestSine_Play
+      Path: Events/Default Work Unit/TestSine_Play
       maxAttenuation: 0
       maxDuration: 0.085958
       minDuration: 0.085958
   RtpcWwu:
-  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
       ObjectType: 5
@@ -122,13 +122,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 2e61d3d819e7c04c8a8b65e8c8f327fa
-    ParentPath: Game Parameters\Default Work Unit
+    ParentPath: Game Parameters/Default Work Unit
     guid: 2e61d3d819e7c04c8a8b65e8c8f327fa
     GuidInternal: 
-    m_lastTime: -8585531099294661160
+    m_lastTime: -8585489943944775808
     List: []
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: States
       ObjectType: 5
@@ -136,13 +136,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: b8440756fbe0fe4080538b4183c44267
-    ParentPath: States\Default Work Unit
+    ParentPath: States/Default Work Unit
     guid: b8440756fbe0fe4080538b4183c44267
     GuidInternal: 
-    m_lastTime: -8585531099295149847
+    m_lastTime: -8585489943944775808
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Switches
       ObjectType: 5
@@ -150,13 +150,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 0b2942af45755345bb96f533d30be4b3
-    ParentPath: Switches\Default Work Unit
+    ParentPath: Switches/Default Work Unit
     guid: 0b2942af45755345bb96f533d30be4b3
     GuidInternal: 
-    m_lastTime: -8585531099295289479
+    m_lastTime: -8585489943944775808
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers\Default Work Unit.wwu
+  - PhysicalPath: Triggers/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Triggers
       ObjectType: 5
@@ -164,14 +164,14 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 7389625805985d4c94ce289cda272be4
-    ParentPath: Triggers\Default Work Unit
+    ParentPath: Triggers/Default Work Unit
     guid: 7389625805985d4c94ce289cda272be4
     GuidInternal: 
-    m_lastTime: -8585531099294940413
+    m_lastTime: -8585489943944775808
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 03000000
+  ExpandedFileSystemItemIds: 0200000003000000040000000600000007000000
+  ExpandedWaapiItemIds: 010000000300000006000000070000000b0000000c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
