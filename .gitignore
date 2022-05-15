@@ -66,18 +66,12 @@ fmod_editor.log
 ## ---------------- ##
 
 # project stuff
-ThreeD-SoundSandbox copy_WwiseProject/.cache
+
 3DSoundSandbox/3DSoundSandbox WwiseProject/*.prof
 3DSoundSandbox/3DSoundSandbox WwiseProject/*_WwiseProject.*.validationcache
 3DSoundSandbox/3DSoundSandbox WwiseProject/*_WwiseProject.*.wsettings
 3DSoundSandbox/3DSoundSandbox WwiseProject/**/*.akd
-
-# WWise Picker (editor)
-# from https://www.audiokinetic.com/library/edge/?source=Unity&id=unity__troubleshooting.html
-# >> Do not keep AkWwiseProjectData.asset under version control! 
-# >> This is a temporary cache file for the Wwise project data, 
-# >> so as to avoid having the Wwise Picker continuously parse the Work Unit files.
-Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+3DSoundSandbox/3DSoundSandbox WwiseProject/.cache
 
 # notes:
 # 1) if any other files go in Assets/Wwise/Editor/ProjectData/ besides AkWwiseProjectData.asset*,
@@ -130,4 +124,7 @@ Desktop.ini
 
 3DSoundSandbox/.idea
 3DSoundSandbox/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
-3DSoundSandbox/UserSettings/Layouts/default-2021.dwlt
+3DSoundSandbox/Logs/AssetImportWorker0-prev.log
+3DSoundSandbox/Logs/shadercompiler-UnityShaderCompiler0.log
+3DSoundSandbox/ProjectSettings/RiderScriptEditorPersistedState.asset
+
